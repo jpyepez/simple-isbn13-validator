@@ -8,7 +8,7 @@ defineProps<ButtonBaseProps>()
 
 <template>
     <button
-        class="px-10 py-2 text-white bg-blue-600 rounded active:bg-blue-800"
+        class="px-6 sm:px-10 py-2 text-white bg-blue-600 rounded active:bg-blue-800"
     >
         {{ label }}
     </button>

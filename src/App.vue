@@ -20,15 +20,18 @@ const onClear = () => {
 </script>
 
 <template>
-    <main class="h-screen bg-blue-100 py-80 px-80">
-        <form @submit.prevent="onSubmit">
+    <main class="h-screen px-4 py-40 bg-blue-100 min-w-min">
+        <form @submit.prevent="onSubmit" class="max-w-lg mx-auto min-w-min">
             <CardBase class="flex flex-col gap-8 mb-8">
+                <h1 class="m-0 text-lg font-semibold text-center sm:text-xl">
+                    ISBN13 Verification
+                </h1>
                 <TextInput
                     label="Input the ISBN-13 to verify:"
                     v-model="isbnValue"
                     :input-attributes="{ maxlength: '13' }"
                 />
-                <div class="flex justify-evenly">
+                <div class="flex gap-2 justify-evenly sm:gap-4">
                     <ButtonBase label="Verify" type="submit" />
                     <ButtonBase
                         label="Clear"
