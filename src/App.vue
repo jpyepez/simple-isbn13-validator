@@ -29,7 +29,6 @@ const onClear = () => {
                 <TextInput
                     label="Input the ISBN-13 to verify:"
                     v-model="isbnValue"
-                    :input-attributes="{ maxlength: '13' }"
                 />
                 <div class="flex gap-2 justify-evenly sm:gap-4">
                     <ButtonBase label="Verify" type="submit" />
